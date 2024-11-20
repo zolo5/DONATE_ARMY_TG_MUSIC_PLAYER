@@ -9,11 +9,11 @@ from pyrogram.errors import (
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
+from config import PRIVATE_BOT_MODE
 from config import SUPPORT_GROUP as SUPPORT_CHAT
 from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
-from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
+from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import _st_ as clean
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     get_assistant,
@@ -25,14 +25,12 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     is_commanddelete_on,
     is_maintenance,
     is_served_private_chat,
-    set_loop,
 )
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import botplaylist_markup
 
 links = {}
 
 
-def PlayWrapper(command):
+def RadioWrapper(command):
     async def wrapper(client, message):
         language = await get_lang(message.chat.id)
         userbot = await get_assistant(message.chat.id)
@@ -79,16 +77,7 @@ def PlayWrapper(command):
             else None
         )
         url = await YouTube.url(message)
-        if audio_telegram is None and video_telegram is None and url is None:
-            if len(message.command) < 2:
-                if "stream" in message.command:
-                    return await message.reply_text(_["str_1"])
-                buttons = botplaylist_markup(_)
-                return await message.reply_photo(
-                    photo=PLAYLIST_IMG_URL,
-                    caption=_["playlist_1"],
-                    reply_markup=InlineKeyboardMarkup(buttons),
-                )
+
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
@@ -146,8 +135,7 @@ def PlayWrapper(command):
                 member.chat.id async for member in userbot.get_call_members(chat_id)
             ]
             if await is_active_chat(chat_id) and userbot.id not in call_participants_id:
-                await DONATE_ARMY.st_stream(chat_id)
-                await set_loop(chat_id, 0)
+                await clean(chat_id)
 
             return await command(
                 client,
@@ -172,8 +160,7 @@ def PlayWrapper(command):
                     await is_active_chat(chat_id)
                     and userbot.id not in call_participants_id
                 ):
-                    await DONATE_ARMY.st_stream(chat_id)
-                    await set_loop(chat_id, 0)
+                    await clean(chat_id)
 
                 return await command(
                     client,
@@ -266,8 +253,8 @@ def PlayWrapper(command):
             member.chat.id async for member in userbot.get_call_members(chat_id)
         ]
         if await is_active_chat(chat_id) and userbot.id not in call_participants_id:
-            await DONATE_ARMY.st_stream(chat_id)
-            await set_loop(chat_id, 0)
+            await clean(chat_id)
+
         return await command(
             client,
             message,
