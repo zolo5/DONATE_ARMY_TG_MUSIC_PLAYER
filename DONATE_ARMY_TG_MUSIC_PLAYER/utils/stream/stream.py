@@ -12,20 +12,20 @@ import os
 from random import randint
 from typing import Union
 
-from DONATE_ARMY import Carbon, YouTube, app
-from DONATE_ARMY.core.call import DONATE_ARMY
-from DONATE_ARMY.misc import db
-from DONATE_ARMY.utils.database import (
+from DONATE_ARMY_TG_MUSIC_PLAYER import Carbon, YouTube, app
+from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
+from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     add_active_video_chat,
     is_active_chat,
     is_video_allowed,
 )
-from DONATE_ARMY.utils.exceptions import AssistantErr
-from DONATE_ARMY.utils.inline.play import queue_markup, stream_markup, telegram_markup
-from DONATE_ARMY.utils.inline.playlist import close_markup
-from DONATE_ARMY.utils.pastebin import DONATE_ARMYbin
-from DONATE_ARMY.utils.stream.queue import put_queue, put_queue_index
-from DONATE_ARMY.utils.thumbnails import gen_qthumb, gen_thumb
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.exceptions import AssistantErr
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import queue_markup, stream_markup, telegram_markup
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.playlist import close_markup
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.pastebin import DONATE_ARMYbin
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.stream.queue import put_queue, put_queue_index
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.thumbnails import gen_qthumb, gen_thumb
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
