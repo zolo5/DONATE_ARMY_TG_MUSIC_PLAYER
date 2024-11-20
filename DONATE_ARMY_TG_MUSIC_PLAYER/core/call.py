@@ -33,7 +33,6 @@ from pytgcalls.types import (
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import LOGGER, YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -52,10 +51,15 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     set_loop,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.exceptions import AssistantErr
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import check_duration, seconds_to_min, speed_converter
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import (
+    check_duration,
+    seconds_to_min,
+    speed_converter,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import stream_markup, telegram_markup
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.stream.autoclear import auto_clean
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.thumbnails import gen_thumb
+from strings import get_string
 
 active = []
 autoend = {}
