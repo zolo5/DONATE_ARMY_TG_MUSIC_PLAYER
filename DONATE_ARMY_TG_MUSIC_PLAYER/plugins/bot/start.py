@@ -22,7 +22,6 @@ from youtubesearchpython.__future__ import VideosSearch
 
 import config
 from config import BANNED_USERS, START_IMG_URL
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import HELPABLE, Telegram, YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS, _boot_
 from DONATE_ARMY_TG_MUSIC_PLAYER.plugins.play.playlist import del_plist_msg
@@ -40,7 +39,12 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import LanguageStart
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import get_readable_time
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.functions import MARKDOWN, WELCOMEHELP
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import alive_panel, music_start_panel, start_pannel
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import (
+    alive_panel,
+    music_start_panel,
+    start_pannel,
+)
+from strings import get_string
 
 from .help import paginate_modules
 

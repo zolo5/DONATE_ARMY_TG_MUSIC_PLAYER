@@ -21,7 +21,6 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS, adminlist
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
@@ -37,6 +36,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     is_nonadmin_chat,
     set_loop,
 )
+from strings import get_string
 
 
 @app.on_message(

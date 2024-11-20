@@ -14,10 +14,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import AdminRightsCheck
+from strings import get_command
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")

@@ -23,11 +23,11 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS, SONG_DOWNLOAD_DURATION, SONG_DOWNLOAD_DURATION_LIMIT
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language, languageCB
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import convert_bytes
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.song import song_markup
+from strings import get_command
 
 # Command
 

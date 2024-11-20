@@ -16,13 +16,21 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils import DONATE_ARMYbin, get_channeplayCB, seconds_to_min
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_cmode, is_active_chat, is_music_playing
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils import (
+    DONATE_ARMYbin,
+    get_channeplayCB,
+    seconds_to_min,
+)
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    get_cmode,
+    is_active_chat,
+    is_music_playing,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language, languageCB
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import queue_back_markup, queue_markup
+from strings import get_command
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")

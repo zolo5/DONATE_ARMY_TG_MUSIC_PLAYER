@@ -453,7 +453,9 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await DONATE_ARMY.skip_stream(chat_id, file_path, video=status, image=image)
+                await DONATE_ARMY.skip_stream(
+                    chat_id, file_path, video=status, image=image
+                )
             except:
                 return await mystic.edit_text(_["call_7"])
             button = stream_markup(_, videoid, chat_id)
@@ -497,7 +499,9 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await DONATE_ARMY.skip_stream(chat_id, queued, video=status, image=image)
+                await DONATE_ARMY.skip_stream(
+                    chat_id, queued, video=status, image=image
+                )
             except:
                 return await CallbackQuery.message.reply_text(_["call_7"])
             if videoid == "telegram":

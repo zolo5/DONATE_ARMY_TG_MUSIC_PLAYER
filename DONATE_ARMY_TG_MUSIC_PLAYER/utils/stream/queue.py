@@ -11,9 +11,10 @@
 
 from typing import Union
 
+from DONATE_ARMY.misc import db
+
 from config import autoclean, chatstats, userstats
 from config.config import time_to_seconds
-from DONATE_ARMY.misc import db
 
 
 async def put_queue(

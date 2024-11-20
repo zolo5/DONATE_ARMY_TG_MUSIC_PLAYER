@@ -18,7 +18,6 @@ from pyrogram.types import (
 )
 
 from config import BANNED_USERS, CLEANMODE_DELETE_MINS, OWNER_ID
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     add_nonadmin_chat,
@@ -52,6 +51,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.settings import (
     video_quality_markup,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.start import private_panel
+from strings import get_command
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")

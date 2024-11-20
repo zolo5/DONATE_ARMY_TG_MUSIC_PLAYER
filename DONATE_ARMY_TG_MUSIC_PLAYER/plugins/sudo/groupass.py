@@ -15,7 +15,11 @@ from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.userbot import assistants
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.assistant import get_assistant_details
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.assistant import is_avl_assistant as assistant
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_assistant, save_assistant, set_assistant
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    get_assistant,
+    save_assistant,
+    set_assistant,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import AdminActual
 
 

@@ -16,11 +16,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
 from config import BANNED_USERS, START_IMG_URL
-from strings import get_command, get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import HELPABLE, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_lang, is_commanddelete_on
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import LanguageStart
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.help import private_help_panel
+from strings import get_command, get_string
 
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
@@ -258,9 +258,9 @@ from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from strings import helpers
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import languageCB
+from strings import helpers
 
 
 @app.on_callback_query(filters.regex("music_callback") & ~BANNED_USERS)
@@ -470,8 +470,12 @@ async def about_callback(client: Client, callback_query: CallbackQuery):
             ),
         ],
         [
-            InlineKeyboardButton(text="🎁ɪɴsᴛᴀ🎁", url=f"https://www.instagram.com/donate_army"),
-            InlineKeyboardButton(text="💲ʏᴏᴜᴛᴜʙᴇ💲", url=f"https://www.youtube.com/@DONATE_ARMY"),
+            InlineKeyboardButton(
+                text="🎁ɪɴsᴛᴀ🎁", url=f"https://www.instagram.com/donate_army"
+            ),
+            InlineKeyboardButton(
+                text="💲ʏᴏᴜᴛᴜʙᴇ💲", url=f"https://www.youtube.com/@DONATE_ARMY"
+            ),
         ],
         [
             InlineKeyboardButton(text="🔙 Back", callback_data="about")

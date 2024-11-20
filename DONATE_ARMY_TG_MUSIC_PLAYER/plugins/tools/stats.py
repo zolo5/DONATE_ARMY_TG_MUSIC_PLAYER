@@ -21,7 +21,6 @@ from pytgcalls.__version__ import __version__ as pytgver
 
 import config
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.userbot import assistants
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS, pymongodb
@@ -45,6 +44,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.stats import (
     stats_buttons,
     top_ten_stats_markup,
 )
+from strings import get_command
 
 loop = asyncio.get_running_loop()
 

@@ -12,11 +12,11 @@ import asyncio
 from pyrogram import filters
 
 import config
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database.memorydatabase import get_video_limit
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import convert_bytes
+from strings import get_command
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

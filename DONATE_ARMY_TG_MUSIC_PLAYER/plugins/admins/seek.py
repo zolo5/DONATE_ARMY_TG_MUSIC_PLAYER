@@ -11,11 +11,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils import AdminRightsCheck, seconds_to_min
+from strings import get_command
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")

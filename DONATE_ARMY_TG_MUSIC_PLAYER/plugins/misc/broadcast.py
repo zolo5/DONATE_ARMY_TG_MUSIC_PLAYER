@@ -18,7 +18,6 @@ from pyrogram.raw import types
 
 import config
 from config import OWNER_ID, adminlist, chatstats, clean, userstats
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.cleanmode import protected_messages
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -36,6 +35,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import alpha_to_int
+from strings import get_command
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS

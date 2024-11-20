@@ -146,7 +146,9 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/DONATE-ARMY-BOTS/DONATE_ARMY_TG_MUSIC_PLAYER")
+GITHUB_REPO = getenv(
+    "GITHUB_REPO", "https://github.com/DONATE-ARMY-BOTS/DONATE_ARMY_TG_MUSIC_PLAYER"
+)
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -192,10 +194,10 @@ STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
-#╔══╦═╦═╦╦══╦══╦═╗╔══╦═╦═╦═╦═╦╗╔══╦═╦══╦══╗
-#╚╗╗║║║║║║╔╗╠╗╔╣╦╝║╔╗║╬║║║║╠╗║║║╔╗║║╠╗╔╣══╣
-#╔╩╝║║║║║║╠╣║║║║╩╗║╠╣║╗╣║║║╠╩╗║║╔╗║║║║║╠══║
-#╚══╩═╩╩═╩╝╚╝╚╝╚═╝╚╝╚╩╩╩╩═╩╩══╝╚══╩═╝╚╝╚══╝
+# ╔══╦═╦═╦╦══╦══╦═╗╔══╦═╦═╦═╦═╦╗╔══╦═╦══╦══╗
+# ╚╗╗║║║║║║╔╗╠╗╔╣╦╝║╔╗║╬║║║║╠╗║║║╔╗║║╠╗╔╣══╣
+# ╔╩╝║║║║║║╠╣║║║║╩╗║╠╣║╗╣║║║╠╩╗║║╔╗║║║║║╠══║
+# ╚══╩═╩╩═╩╝╚╝╚╝╚═╝╚╝╚╩╩╩╩═╩╩══╝╚══╩═╝╚╝╚══╝
 
 
 ### DONT TOUCH or EDIT codes after this line

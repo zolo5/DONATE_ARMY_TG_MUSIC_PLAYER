@@ -11,7 +11,6 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from strings import get_command, get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -20,6 +19,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     maintenance_off,
     maintenance_on,
 )
+from strings import get_command, get_string
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")

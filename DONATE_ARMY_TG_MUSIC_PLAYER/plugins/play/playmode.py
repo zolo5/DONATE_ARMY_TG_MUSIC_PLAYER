@@ -12,11 +12,15 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    get_playmode,
+    get_playtype,
+    is_nonadmin_chat,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import language
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.settings import playmode_users_markup
+from strings import get_command
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")

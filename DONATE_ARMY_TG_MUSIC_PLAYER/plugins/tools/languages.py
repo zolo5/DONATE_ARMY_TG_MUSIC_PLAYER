@@ -13,10 +13,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
-from strings import get_command, get_string, languages_present
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_lang, set_lang
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import ActualAdminCB, language, languageCB
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import (
+    ActualAdminCB,
+    language,
+    languageCB,
+)
+from strings import get_command, get_string, languages_present
 
 # Languages Available
 

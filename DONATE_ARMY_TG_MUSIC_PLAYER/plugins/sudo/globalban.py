@@ -15,7 +15,6 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils import get_readable_time
@@ -28,6 +27,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     remove_banned_user,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
@@ -156,7 +156,11 @@ from pyrogram.types import Message, User
 from config import BANNED_USERS
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import add_banned_user, is_banned_user, remove_banned_user
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    add_banned_user,
+    is_banned_user,
+    remove_banned_user,
+)
 
 
 async def extract_user(m: Message) -> User:

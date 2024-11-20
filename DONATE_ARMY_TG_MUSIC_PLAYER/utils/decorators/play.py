@@ -11,7 +11,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
 from config import SUPPORT_GROUP as SUPPORT_CHAT
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
@@ -28,6 +27,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     set_loop,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import botplaylist_markup
+from strings import get_string
 
 links = {}
 

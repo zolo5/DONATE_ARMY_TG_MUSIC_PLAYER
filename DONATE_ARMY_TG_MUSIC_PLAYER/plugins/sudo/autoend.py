@@ -9,10 +9,10 @@
 #
 from pyrogram import filters
 
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import autoend_off, autoend_on
+from strings import get_command
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")

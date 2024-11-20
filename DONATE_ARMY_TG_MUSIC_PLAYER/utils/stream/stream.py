@@ -12,10 +12,6 @@ import os
 from random import randint
 from typing import Union
 
-from pyrogram.types import InlineKeyboardMarkup
-
-import config
-from config import LOG_GROUP_ID, OWNER_ID
 from DONATE_ARMY import Carbon, YouTube, app
 from DONATE_ARMY.core.call import DONATE_ARMY
 from DONATE_ARMY.misc import db
@@ -30,6 +26,10 @@ from DONATE_ARMY.utils.inline.playlist import close_markup
 from DONATE_ARMY.utils.pastebin import DONATE_ARMYbin
 from DONATE_ARMY.utils.stream.queue import put_queue, put_queue_index
 from DONATE_ARMY.utils.thumbnails import gen_qthumb, gen_thumb
+from pyrogram.types import InlineKeyboardMarkup
+
+import config
+from config import LOG_GROUP_ID, OWNER_ID
 
 
 async def stream(
@@ -259,7 +259,9 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DONATE_ARMY.join_call(chat_id, original_chat_id, file_path, video=None)
+            await DONATE_ARMY.join_call(
+                chat_id, original_chat_id, file_path, video=None
+            )
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -309,7 +311,9 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await DONATE_ARMY.join_call(chat_id, original_chat_id, file_path, video=status)
+            await DONATE_ARMY.join_call(
+                chat_id, original_chat_id, file_path, video=status
+            )
             await put_queue(
                 chat_id,
                 original_chat_id,

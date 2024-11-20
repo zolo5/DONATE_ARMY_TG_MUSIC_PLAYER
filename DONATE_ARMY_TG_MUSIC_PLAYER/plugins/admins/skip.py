@@ -14,7 +14,6 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from config import BANNED_USERS
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
@@ -23,6 +22,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import AdminRightsCheck
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import stream_markup, telegram_markup
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.stream.autoclear import auto_clean
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.thumbnails import gen_thumb
+from strings import get_command
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")

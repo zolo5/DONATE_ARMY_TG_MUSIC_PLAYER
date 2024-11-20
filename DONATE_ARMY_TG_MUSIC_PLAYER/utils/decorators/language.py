@@ -7,9 +7,13 @@
 #
 # All rights reserved.
 #
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_lang, is_commanddelete_on, is_maintenance
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    get_lang,
+    is_commanddelete_on,
+    is_maintenance,
+)
+from strings import get_string
 
 
 def language(mystic):

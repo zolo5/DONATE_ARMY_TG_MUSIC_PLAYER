@@ -12,11 +12,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 import config
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import add_off, add_on
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 # Commands
 VIDEOMODE_COMMAND = get_command("VIDEOMODE_COMMAND")

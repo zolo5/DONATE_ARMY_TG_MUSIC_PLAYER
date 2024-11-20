@@ -2,11 +2,18 @@ import asyncio
 
 from pyrogram.types import InlineKeyboardMarkup
 
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_active_chats, get_lang, is_music_playing
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    get_active_chats,
+    get_lang,
+    is_music_playing,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import seconds_to_min
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import stream_markup_timerr, telegram_markup_timer
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline import (
+    stream_markup_timerr,
+    telegram_markup_timer,
+)
+from strings import get_string
 
 from ..admins.callback import wrong
 

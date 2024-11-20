@@ -12,7 +12,6 @@ from pyrogram.enums import ChatMemberStatus, ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -24,6 +23,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     is_maintenance,
     is_nonadmin_chat,
 )
+from strings import get_string
 
 from ..formatters import int_to_alpha
 

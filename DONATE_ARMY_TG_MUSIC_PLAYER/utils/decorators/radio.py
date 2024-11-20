@@ -11,7 +11,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import PRIVATE_BOT_MODE
 from config import SUPPORT_GROUP as SUPPORT_CHAT
-from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import _st_ as clean
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
@@ -26,6 +25,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     is_maintenance,
     is_served_private_chat,
 )
+from strings import get_string
 
 links = {}
 

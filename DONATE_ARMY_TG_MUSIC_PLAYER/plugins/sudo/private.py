@@ -12,7 +12,6 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 import config
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -22,6 +21,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     remove_private_chat,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 AUTHORIZE_COMMAND = get_command("AUTHORIZE_COMMAND")
 UNAUTHORIZE_COMMAND = get_command("UNAUTHORIZE_COMMAND")

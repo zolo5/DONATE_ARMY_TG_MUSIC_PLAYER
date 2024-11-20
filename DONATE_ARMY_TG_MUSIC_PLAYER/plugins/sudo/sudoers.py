@@ -12,11 +12,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import add_sudo, remove_sudo
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")

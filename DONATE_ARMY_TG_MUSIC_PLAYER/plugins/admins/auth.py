@@ -12,7 +12,6 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     delete_authuser,
@@ -22,6 +21,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators import AdminActual, language
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import int_to_alpha
+from strings import get_command
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")

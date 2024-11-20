@@ -54,15 +54,21 @@ async def init():
         if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER.plugins").info("Successfully Imported All Modules ")
+    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER.plugins").info(
+        "Successfully Imported All Modules "
+    )
 
     await userbot.start()
     await DONATE_ARMY.start()
     await DONATE_ARMY.decorators()
-    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER").info("DONATE_ARMY_TG_MUSIC_PLAYER STARTED SUCCESSFULLY 🕊️")
+    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER").info(
+        "DONATE_ARMY_TG_MUSIC_PLAYER STARTED SUCCESSFULLY 🕊️"
+    )
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER").info("Stopping DONATE_ARMY_TG_MUSIC_PLAYER! GoodBye")
+    LOGGER("DONATE_ARMY_TG_MUSIC_PLAYER").info(
+        "Stopping DONATE_ARMY_TG_MUSIC_PLAYER! GoodBye"
+    )

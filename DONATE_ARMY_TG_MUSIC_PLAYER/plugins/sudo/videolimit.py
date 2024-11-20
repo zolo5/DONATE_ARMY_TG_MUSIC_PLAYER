@@ -11,11 +11,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import set_video_limit
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 

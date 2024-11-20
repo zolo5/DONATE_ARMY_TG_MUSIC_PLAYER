@@ -19,11 +19,24 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS, LOG_GROUP_ID, OWNER_ID, lyrical
-from DONATE_ARMY_TG_MUSIC_PLAYER import LOGGER, Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from DONATE_ARMY_TG_MUSIC_PLAYER import (
+    LOGGER,
+    Apple,
+    Resso,
+    SoundCloud,
+    Spotify,
+    Telegram,
+    YouTube,
+    app,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils import seconds_to_min, time_to_seconds
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.channelplay import get_channeplayCB
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import add_served_chat, get_assistant, is_video_allowed
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
+    add_served_chat,
+    get_assistant,
+    is_video_allowed,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import languageCB
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.play import PlayWrapper
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import formats

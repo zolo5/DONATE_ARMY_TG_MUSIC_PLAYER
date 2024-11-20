@@ -24,7 +24,6 @@ from pyrogram import filters
 
 import config
 from config import OWNER_ID
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import HAPP, SUDOERS, XCB
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -34,6 +33,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.pastebin import DONATE_ARMYbin
+from strings import get_command
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -142,7 +142,9 @@ async def vardel_(client, message, _):
             return await message.reply_text(_["heroku_4"])
         else:
             await message.reply_text(_["heroku_7"].format(check_var))
-            os.system(f"kill -9 {os.getpid()} && python3 -m DONATE_ARMY_TG_MUSIC_PLAYER")
+            os.system(
+                f"kill -9 {os.getpid()} && python3 -m DONATE_ARMY_TG_MUSIC_PLAYER"
+            )
 
 
 @app.on_message(filters.command(SETVAR_COMMAND) & filters.user(OWNER_ID))
