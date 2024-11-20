@@ -64,7 +64,7 @@ EXTRA_PLUGINS_FOLDER = getenv("EXTRA_PLUGINS_FOLDER", "plugins")
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1000")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "50000")
 )  # Remember to give value in Minutes
 
 
@@ -159,7 +159,7 @@ SPOTIFY_CLIENT_SECRET = getenv(
 
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "999"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "50000"))
 
 
 # Maximum Limit Allowed for users to save playlists on bot's server
