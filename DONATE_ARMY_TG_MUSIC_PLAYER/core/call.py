@@ -33,6 +33,7 @@ from pytgcalls.types import (
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
+from strings import get_string
 from DONATE_ARMY_TG_MUSIC_PLAYER import LOGGER, YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -51,15 +52,10 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     set_loop,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.exceptions import AssistantErr
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import (
-    check_duration,
-    seconds_to_min,
-    speed_converter,
-)
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.formatters import check_duration, seconds_to_min, speed_converter
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import stream_markup, telegram_markup
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.stream.autoclear import auto_clean
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.thumbnails import gen_thumb
-from strings import get_string
 
 active = []
 autoend = {}
@@ -120,7 +116,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="VIPString1",
+            name="DONATE_ARMY_TG_MUSIC_PLAYER1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -130,7 +126,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="VIPString2",
+            name="DONATE_ARMY_TG_MUSIC_PLAYER2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -140,7 +136,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="VIPString3",
+            name="DONATE_ARMY_TG_MUSIC_PLAYER3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -150,7 +146,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="VIPString4",
+            name="DONATE_ARMY_TG_MUSIC_PLAYER4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -160,7 +156,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="VIPString5",
+            name="DONATE_ARMY_TG_MUSIC_PLAYER5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -850,4 +846,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-VIP = Call()
+DONATE_ARMY = Call()
