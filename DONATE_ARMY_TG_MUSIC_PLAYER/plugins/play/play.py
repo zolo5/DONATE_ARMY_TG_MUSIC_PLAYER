@@ -29,7 +29,7 @@ from DONATE_ARMY_TG_MUSIC_PLAYER import (
     YouTube,
     app,
 )
-from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import VIP
+from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils import seconds_to_min, time_to_seconds
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.channelplay import get_channeplayCB
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
@@ -371,7 +371,7 @@ async def play_command(
                     "ᴏᴏᴘs ɪ ᴅᴏɴ'ᴛ Tʜɪɴᴋ ᴛʜᴀᴛ ɪᴛ ɪs ᴀ sᴛʀᴇᴀᴍᴀʙʟᴇ ᴜʀʟ"
                 )
             try:
-                await VIP.stream_call(url)
+                await DONATE_ARMY.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "ᴛʜᴇʀᴇ's ᴀɴ ᴇʀʀᴏʀ ɪɴ ᴛʜᴇ ʙᴏᴛ, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴛᴏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ ᴀs sᴏᴏɴ ᴀs ᴩᴏssɪʙʟᴇ."
@@ -606,7 +606,7 @@ async def anonymous_check(client, CallbackQuery):
         return
 
 
-@app.on_callback_query(filters.regex("VIPPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("DONATE_ARMY_Playlists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
