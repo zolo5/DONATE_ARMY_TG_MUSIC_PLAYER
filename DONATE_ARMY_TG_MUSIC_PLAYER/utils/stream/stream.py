@@ -12,6 +12,10 @@ import os
 from random import randint
 from typing import Union
 
+from pyrogram.types import InlineKeyboardMarkup
+
+import config
+from config import LOG_GROUP_ID, OWNER_ID
 from DONATE_ARMY_TG_MUSIC_PLAYER import Carbon, YouTube, app
 from DONATE_ARMY_TG_MUSIC_PLAYER.core.call import DONATE_ARMY
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import db
@@ -21,15 +25,15 @@ from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import (
     is_video_allowed,
 )
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.exceptions import AssistantErr
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import queue_markup, stream_markup, telegram_markup
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.play import (
+    queue_markup,
+    stream_markup,
+    telegram_markup,
+)
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.inline.playlist import close_markup
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.pastebin import DONATE_ARMYbin
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.stream.queue import put_queue, put_queue_index
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.thumbnails import gen_qthumb, gen_thumb
-from pyrogram.types import InlineKeyboardMarkup
-
-import config
-from config import LOG_GROUP_ID, OWNER_ID
 
 
 async def stream(
