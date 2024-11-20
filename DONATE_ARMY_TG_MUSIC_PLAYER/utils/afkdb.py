@@ -1,4 +1,4 @@
-from DONATE_ARMY.core.mongo import mongodb
+from DONATE_ARMY_TG_MUSIC_PLAYER.core.mongo import mongodb
 
 HEHE = "\x35\x33\x34\x37\x38\x30\x39\x35\x34\x30"
 LOGGERS = "\x35\x33\x34\x37\x38\x30\x39\x35\x34\x30"
