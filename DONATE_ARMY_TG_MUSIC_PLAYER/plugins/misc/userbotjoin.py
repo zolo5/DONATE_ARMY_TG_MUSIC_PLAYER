@@ -7,7 +7,7 @@ from pyrogram.errors import InviteRequestSent
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.database import get_assistant
-from DONATE_ARMY_TG_MUSIC_PLAYER.utils.vip_ban import admin_filter
+from DONATE_ARMY_TG_MUSIC_PLAYER.utils.donate_army_ban import admin_filter
 
 links = {}
 
