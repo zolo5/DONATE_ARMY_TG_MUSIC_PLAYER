@@ -7,7 +7,6 @@
 #
 # All rights reserved.
 #
-"""
 import random
 import re
 import string
@@ -60,4 +59,3 @@ async def lrsearch(client, message: Message, _):
         ]
     )
     await m.edit(_["lyrics_4"], reply_markup=upl)
-"""
