@@ -7,7 +7,6 @@
 #
 # All rights reserved.
 #
-"""
 import random
 import re
 import string
@@ -17,9 +16,9 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS, lyrical
-from strings import get_command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.utils.decorators.language import language
+from strings import get_command
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")
@@ -60,4 +59,3 @@ async def lrsearch(client, message: Message, _):
         ]
     )
     await m.edit(_["lyrics_4"], reply_markup=upl)
-"""
