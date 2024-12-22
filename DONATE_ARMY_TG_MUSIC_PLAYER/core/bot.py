@@ -6,10 +6,10 @@
 # Please see < https://github.com/DONATE-ARMY-BOTS/DONATE_ARMY_TG_MUSIC_PLAYER/blob/master/LICENSE >
 #
 # All rights reserved.
-import pyrogram
 import asyncio
 import threading
 
+import pyrogram
 import uvloop
 from flask import Flask
 from pyrogram import Client, idle
