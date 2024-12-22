@@ -12,9 +12,9 @@ import asyncio
 
 import speedtest
 
-from strings import command
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
+from strings import command
 
 
 def testspeed(m):
