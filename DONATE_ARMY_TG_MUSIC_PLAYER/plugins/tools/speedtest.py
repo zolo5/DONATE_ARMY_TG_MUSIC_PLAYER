@@ -14,7 +14,10 @@ import speedtest
 
 from DONATE_ARMY_TG_MUSIC_PLAYER import app
 from DONATE_ARMY_TG_MUSIC_PLAYER.misc import SUDOERS
-from strings import command
+from strings import get_command
+
+# Commands
+SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")
 
 
 def testspeed(m):
