@@ -6,7 +6,7 @@
 # Please see < https://github.com/DONATE-ARMY-BOTS/DONATE_ARMY_TG_MUSIC_PLAYER/blob/master/LICENSE >
 #
 # All rights reserved.
-
+import pyrogram
 import asyncio
 import threading
 
